@@ -5,6 +5,9 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Oswald" rel="stylesheet">
 		<link rel="icon" type="image/png" href="favicon.ico"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset='UTF-8'>
+		
 		<!-- PREFETCH-->
 		<link rel="prefetch" href="images\other\hoover.png">
 		<link rel="prefetch" href="images\other\jumplogosmall.png">
@@ -74,9 +77,26 @@
 		<link rel="prefetch" href="images\signatures\1-2.png">
 		<link rel="prefetch" href="images\signatures\1.png">
 		<!-- -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+			.no-js #loader { display: none;  }
+			.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+		</style>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script src="https://github.com/Modernizr/Modernizr/raw/master/modernizr.js"></script>
+		<script>
+			// Wait for window load
+			$(window).load(function() {
+				// Animate loader off screen
+				$("#loader").animate({
+					top: -200
+				}, 1500);
+			});
+		</script>
+		
 	</head>
 	<body>
+		<div class="se-pre-con"></div>
 		<!-- MENU-->
 		<ul>
 			<a href="index.html"><img id="logo" src="images\flamelogo1.png" alt="Logo" style="height:54px;width:54px;" /></a>
@@ -89,7 +109,7 @@
 		</ul>
 		<!-- CONTENT-->
 		<div class="title">
-			<h1>Marinoitu's Gallery TEST LOL XD</h1>
+			<h1>Marinoitu's Gallery</h1>
 			<h2><i>Visual Design & Artwork</i></h2>
 		</div>
 		<!-- FOOTER-->
